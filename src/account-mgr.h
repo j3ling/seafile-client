@@ -71,9 +71,10 @@ public:
     // invalidate current login and emit a re-login signal
     void invalidateCurrentLogin();
 
-    bool reloginAccount(const Account &account);
-
     void getSyncedReposToken(const Account& account);
+
+public slots:
+    bool reloginAccount(const Account &account);
 
 signals:
     /**
